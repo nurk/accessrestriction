@@ -1,4 +1,4 @@
-A most project that I have seen we tend to separate the domain in different functional packages.
+In most project that I have seen we tend to separate the domain in different functional packages.
 This in order to not have too many classes in each package.
 
 The caveat with this is that you could have a domain object that needs to have an update method but should only be called from a domainService in another package.
@@ -18,7 +18,7 @@ So in this crude example the update method from `DomainB` should only be called 
 Hence following method:
 ```
 public void update(DomainB domainB, DomainServiceA.DomainServiceAAccessToken domainServiceAAccessToken){
-    if(!Objects.nonNull(domainServiceAAccessToken)){
+    if(Objects.isNull(domainServiceAAccessToken)){
         throw new IllegalCallerException("No access");
     };
     //do update

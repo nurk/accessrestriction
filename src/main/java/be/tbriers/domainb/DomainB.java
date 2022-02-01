@@ -11,7 +11,7 @@ public class DomainB {
      * can only be called by from domainA package do due to restricted construction of access object
      */
     public void update(DomainB domainB, DomainServiceA.DomainServiceAAccessToken domainServiceAAccessToken){
-        if(!Objects.nonNull(domainServiceAAccessToken)){
+        if(Objects.isNull(domainServiceAAccessToken)){
             throw new IllegalCallerException("No access");
         };
         //do update

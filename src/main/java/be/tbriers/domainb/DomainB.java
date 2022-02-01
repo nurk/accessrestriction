@@ -1,6 +1,6 @@
-package be.tbriers.domaina;
+package be.tbriers.domainb;
 
-import be.tbriers.domainb.DomainServiceA;
+import be.tbriers.domaina.DomainServiceA;
 
 import java.util.Objects;
 
@@ -8,7 +8,7 @@ public class DomainB {
 
     /**
      *
-     * can only be called by DomainServiceA due to private construction of access object
+     * can only be called by from domainA package do due to restricted construction of access object
      */
     public void update(DomainB domainB, DomainServiceA.DomainServiceAAccessToken domainServiceAAccessToken){
         if(!Objects.nonNull(domainServiceAAccessToken)){

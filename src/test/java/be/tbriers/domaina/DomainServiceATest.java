@@ -1,4 +1,4 @@
-package be.tbriers.domainb;
+package be.tbriers.domaina;
 
 import org.junit.jupiter.api.Test;
 

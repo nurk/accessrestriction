@@ -1,6 +1,6 @@
-package be.tbriers.domainb;
+package be.tbriers.domaina;
 
-import be.tbriers.domaina.DomainB;
+import be.tbriers.domainb.DomainB;
 
 public class DomainServiceA {
     public static final class DomainServiceAAccessToken {
